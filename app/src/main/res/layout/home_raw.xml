@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="90dp"
+    android:id="@+id/linearLayout"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/textForItem"
+        android:text="Test"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:gravity="left|center"
+        android:textSize="24sp">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="30dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:src="@drawable/add_icon"
+        >
+
+    </ImageView>
+    <TextView
+        android:layout_width="30dp"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:text="0"
+        android:id="@+id/amount"
+        android:gravity="center"
+        android:textSize="26sp">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/remove_icon"
+        >
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_gravity="end|bottom"
+        android:layout_height="54dp"
+        android:src="@drawable/delete_icon"
+        >
+
+    </ImageView>
+
+</LinearLayout>
