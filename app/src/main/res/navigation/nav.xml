@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.volkankelleci.again.ShoppingList.ShoppingListFragment"
+        android:label="BlankFragment"
+        tools:layout="@layout/fragment_shopping_list">
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.volkankelleci.again.history.HistoryListFragment"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_history_list" >
+        <action
+            android:id="@+id/action_blankFragment2_to_dateWithContentFragment"
+            app:destination="@id/dateWithContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateWithContentFragment"
+        android:name="com.volkankelleci.again.datewithcontent.DateWithContentFragment"
+        android:label="fragment_date_with_content"
+        tools:layout="@layout/fragment_date_with_content" >
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+</navigation>
